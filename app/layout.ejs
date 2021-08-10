@@ -1,61 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+    <header class="container">
+      <nav class="position-relative">
+        <h1 class="logo position-absolute top-50 start-50 translate-middle">
+          <a class="d-block link-primary" href="/">EXHIBINECTION</a>
+        </h1>
+        <ul class="nav justify-content-end">
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link px-3 py-4" href="#">Sign in</a>
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link px-3 py-4" href="#">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-black position-relative px-3 py-4" href="#"
+              ><span class="material-icons"> confirmation_number </span>
+              <span
+                class="
+                  badge
+                  rounded-pill
+                  bg-secondary
+                  position-absolute
+                  header__badge
+                "
+                >3</span
+              >
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <%- contents %>
 
     <footer class="footer">
-      footer
+      <section class="footer__banner">
+        <div
+          class="container h-100 d-flex flex-column justify-content-end pb-l"
+        >
+          <div class="row">
+            <div class="col">
+              <p class="text-white h1 mb-2">想收到最新消息嗎？</p>
+              <p class="text-white h1 mb-2">快訂閱我們！</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="輸入您的電子信箱"
+                    />
+                    <div
+                      class="input-group-text btn btn-secondary p-0 px-5 py-sm"
+                    >
+                      訂閱
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="w-100 bg-white">
+        <div class="container d-flex justify-content-md-between">
+          <ul
+            class="
+              d-md-flex
+              list-unstyled
+              mb-0
+              align-items-md-center
+              py-3 py-md-4
+            "
+          >
+            <li class="me-3">
+              <h1>
+                <a class="logo d-block link-black" href="/">EXHIBINECTION</a>
+              </h1>
+            </li>
+            <li><small>© 2020. All Rights Reserved.</small></li>
+          </ul>
+          <ul class="d-none d-md-flex list-unstyled mb-0 align-items-md-center">
+            <li class="me-4"><a href="#">Sign in</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>
