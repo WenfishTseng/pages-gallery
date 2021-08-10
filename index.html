@@ -25,15 +25,7 @@
   <body>
     <header class="container">
       <nav class="position-relative">
-        <h1
-          class="
-            header__logo
-            position-absolute
-            top-50
-            start-50
-            translate-middle
-          "
-        >
+        <h1 class="logo position-absolute top-50 start-50 translate-middle">
           <a class="d-block link-primary" href="/">EXHIBINECTION</a>
         </h1>
         <ul class="nav justify-content-end">
@@ -66,21 +58,36 @@
 <main>
   <section class="banner">
     <div class="container h-100 d-flex align-items-center">
-      <div class="banner__box">
-        <h2 class="text-white h1 mb-2">台北當代藝術展</h2>
-        <h3 class="text-white h4 mb-2">01 JUN - 31 OCT</h3>
-        <div class="d-flex">
-          <button type="button" class="btn btn-secondary me-2 px-4 px-md-5">
-            購買票券
-          </button>
-          <button type="button" class="btn btn-outline-white px-4 px-md-5">
-            詳細資訊
-          </button>
+      <!-- 因為flex讓整個元素寬度不見了, 要設定w-100確認寬度 -->
+      <div class="row w-100">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+          <h2 class="text-white h1 mb-2">台北當代藝術展</h2>
+          <h3 class="text-white h4 mb-2">01 JUN - 31 OCT</h3>
+          <div class="d-flex">
+            <button type="button" class="btn btn-secondary me-2 px-4 px-md-5">
+              購買票券
+            </button>
+            <button type="button" class="btn btn-outline-white px-4 px-md-5">
+              詳細資訊
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <nav class="nav-scroller border border-1 border-bottom border-dark">
+
+  <nav
+    class="
+      nav-scroller
+      border
+      border-top-0
+      border-start-0
+      border-end-0
+      border-bottom-1
+      border-dark
+    "
+  >
     <ul
       class="
         nav
@@ -128,24 +135,237 @@
       </li>
     </ul>
   </nav>
-  <section class="popular"></section>
+
+  <section class="popular">
+    <div class="container">
+      <div class="row">
+        <div class="col"><h2 class="title">熱門特展</h2></div>
+      </div>
+
+      <ul class="list-unstyled ps-3">
+        <li class="row bg-light mb-m pb-4 pb-md-0">
+          <div class="col-md-4 ps-md-0 p-0">
+            <img
+              class="img-fluid popular__img"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
+              alt="popular"
+            />
+          </div>
+          <div class="col-md-6 popular__content py-md-xl">
+            <div
+              class="
+                popular__content__firstBox
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+              "
+            >
+              <h3 class="fw-bold h4">
+                2020 台味設計展
+                <a class="link-black d-md-none" href="#"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </h3>
+
+              <div class="h5 d-md-none">01 JUN | 31 OCT</div>
+            </div>
+            <p class="fw-light h4">$350</p>
+            <p class="fw-normal h4 popular__content__text mt-2 mb-l">
+              一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+            </p>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-primary">購買票券</button>
+                <button type="button" class="btn btn-outline-primary">
+                  收藏展覽
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div
+            class="
+              col-md-1
+              d-md-flex
+              flex-md-column
+              justify-content-md-between
+              py-md-xl
+              d-none
+            "
+          >
+            <div class="popular__date text-wrap">01 JUN | 31 OCT</div>
+            <a class="link-black" href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </li>
+
+        <li class="row bg-light mb-m pb-4 pb-md-0">
+          <div class="col-md-4 ps-md-0 p-0">
+            <img
+              class="img-fluid popular__img"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true"
+              alt="popular"
+            />
+          </div>
+          <div class="col-md-6 popular__content py-md-xl">
+            <div
+              class="
+                popular__content__firstBox
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+              "
+            >
+              <h3 class="fw-bold h4">
+                No.22 線上設計展
+                <a class="link-black d-md-none" href="#"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </h3>
+
+              <div class="h5 d-md-none">01 JUN | 31 OCT</div>
+            </div>
+            <p class="fw-light h4">$350</p>
+            <p class="fw-normal h4 popular__content__text mt-2 mb-l">
+              這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
+            </p>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-primary">購買票券</button>
+                <button type="button" class="btn btn-outline-primary">
+                  收藏展覽
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div
+            class="
+              col-md-1
+              d-md-flex
+              flex-md-column
+              justify-content-md-between
+              py-md-xl
+              d-none
+            "
+          >
+            <div class="popular__date text-wrap">01 JUN | 31 OCT</div>
+            <a class="link-black" href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </li>
+
+        <li class="row bg-light mb-m pb-4 pb-md-0">
+          <div class="col-md-4 ps-md-0 p-0">
+            <img
+              class="img-fluid popular__img"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
+              alt="popular"
+            />
+          </div>
+          <div class="col-md-6 popular__content py-md-xl">
+            <div
+              class="
+                popular__content__firstBox
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+              "
+            >
+              <h3 class="fw-bold h4">
+                高雄設計節
+                <a class="link-black d-md-none" href="#"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </h3>
+
+              <div class="h5 d-md-none">01 JUN | 31 OCT</div>
+            </div>
+            <p class="fw-light h4">$350</p>
+            <p class="fw-normal h4 popular__content__text mt-2 mb-l">
+              設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+            </p>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-primary">購買票券</button>
+                <button type="button" class="btn btn-outline-primary">
+                  收藏展覽
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div
+            class="
+              col-md-1
+              d-md-flex
+              flex-md-column
+              justify-content-md-between
+              py-md-xl
+              d-none
+            "
+          >
+            <div class="popular__date text-wrap">01 JUN | 31 OCT</div>
+            <a class="link-black" href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </main>
 
 
-    <footer class="footer position-relative">
-      <div class="container"></div>
-      <nav class="w-100 bg-white position-absolute bottom-0">
+    <footer class="footer">
+      <section class="footer__banner">
+        <div
+          class="container h-100 d-flex flex-column justify-content-end pb-l"
+        >
+          <div class="row">
+            <div class="col">
+              <p class="text-white h1 mb-2">想收到最新消息嗎？</p>
+              <p class="text-white h1 mb-2">快訂閱我們！</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="輸入您的電子信箱"
+                    />
+                    <div
+                      class="input-group-text btn btn-secondary p-0 px-5 py-sm"
+                    >
+                      訂閱
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="w-100 bg-white">
         <div class="container d-flex justify-content-md-between">
-          <ul class="right__menu d-md-flex list-unstyled">
-            <li>
-              <h1 class="">
-                <a class="d-block link-dark" href="/">EXHIBINECTION</a>
+          <ul
+            class="
+              d-md-flex
+              list-unstyled
+              mb-0
+              align-items-md-center
+              py-3 py-md-4
+            "
+          >
+            <li class="me-3">
+              <h1>
+                <a class="logo d-block link-black" href="/">EXHIBINECTION</a>
               </h1>
             </li>
             <li><small>© 2020. All Rights Reserved.</small></li>
           </ul>
-          <ul class="sign__munu d-none d-md-flex list-unstyled">
-            <li><a href="#">Sign in</a></li>
+          <ul class="d-none d-md-flex list-unstyled mb-0 align-items-md-center">
+            <li class="me-4"><a href="#">Sign in</a></li>
             <li><a href="#">Sign up</a></li>
           </ul>
         </div>
