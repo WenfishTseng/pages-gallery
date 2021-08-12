@@ -123,36 +123,38 @@
 
   <div class="designBanner bg-primary text-white">
     <div class="container">
-      <div class="designBanner__box row flex-nowrap flex-column flex-md-row">
-        <div class="col-md-5 order-md-1">
-          <img
-            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
-            alt="design"
-          />
-        </div>
-        <div
-          class="
-            designBanner__box__date
-            col-md-1
-            order-md-2
-            pt-4
-            pb-2
-            p-md-0
-            d-md-flex
-            flex-md-column
-            justify-content-md-end
-          "
-        >
-          01 JUN | 31 OCT
-        </div>
-        <div class="col-md-4 order-md-0">
-          <!-- <p class="text-white d-md-none">01 JUN | 31 OCT</p> -->
-          <h2 class="h1 text-white fw-bold mb-md-4">2020 台味設計展</h2>
-          <p class="text-white">
-            一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-          </p>
-        </div>
-      </div>
+      <a class="d-block link-white" href="purchase.html">
+        <div class="designBanner__box row flex-nowrap flex-column flex-md-row">
+          <div class="col-md-5 order-md-1">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
+              alt="design"
+            />
+          </div>
+          <div
+            class="
+              designBanner__box__date
+              col-md-1
+              order-md-2
+              pt-4
+              pb-2
+              p-md-0
+              d-md-flex
+              flex-md-column
+              justify-content-md-end
+            "
+          >
+            01 JUN | 31 OCT
+          </div>
+          <div class="col-md-4 order-md-0">
+            <!-- <p class="text-white d-md-none">01 JUN | 31 OCT</p> -->
+            <h2 class="h1 text-white fw-bold mb-md-4">2020 台味設計展</h2>
+            <p class="text-white">
+              一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+            </p>
+          </div>
+        </div></a
+      >
     </div>
   </div>
 
@@ -195,36 +197,38 @@
 
   <div class="designBanner bg-primary text-white">
     <div class="container">
-      <div class="designBanner__box row flex-nowrap flex-column flex-md-row">
-        <div class="col-md-5 order-md-1">
-          <img
-            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
-            alt="design"
-          />
-        </div>
-        <div
-          class="
-            designBanner__box__date
-            col-md-1
-            order-md-2
-            pt-4
-            pb-2
-            p-md-0
-            d-md-flex
-            flex-md-column
-            justify-content-md-end
-          "
-        >
-          01 JUN | 31 OCT
-        </div>
-        <div class="col-md-4 order-md-0">
-          <!-- <p class="text-white d-md-none">01 JUN | 31 OCT</p> -->
-          <h2 class="h1 text-white fw-bold mb-md-4">高雄設計節</h2>
-          <p class="text-white">
-            設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
-          </p>
-        </div>
-      </div>
+      <a class="d-block link-white" href="purchase.html">
+        <div class="designBanner__box row flex-nowrap flex-column flex-md-row">
+          <div class="col-md-5 order-md-1">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
+              alt="design"
+            />
+          </div>
+          <div
+            class="
+              designBanner__box__date
+              col-md-1
+              order-md-2
+              pt-4
+              pb-2
+              p-md-0
+              d-md-flex
+              flex-md-column
+              justify-content-md-end
+            "
+          >
+            01 JUN | 31 OCT
+          </div>
+          <div class="col-md-4 order-md-0">
+            <!-- <p class="text-white d-md-none">01 JUN | 31 OCT</p> -->
+            <h2 class="h1 text-white fw-bold mb-md-4">高雄設計節</h2>
+            <p class="text-white">
+              設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+            </p>
+          </div>
+        </div></a
+      >
     </div>
   </div>
 </main>
@@ -352,10 +356,27 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".swiper-container", {
         slidesPerView: 3,
         spaceBetween: 30,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
       });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+        return direction;
+      }
     </script>
   </body>
 </html>
