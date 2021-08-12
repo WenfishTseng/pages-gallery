@@ -13412,4 +13412,14 @@ body .container {
   }
 }
 
+.ticket {
+  padding: 80px 0px 40px;
+}
+
+@media (max-width: 767px) {
+  .ticket {
+    padding: 44px 0px 40px;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
