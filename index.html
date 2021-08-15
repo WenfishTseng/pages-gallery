@@ -42,7 +42,11 @@
             <a class="nav-link px-3 py-4" href="#">Sign up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-black position-relative px-3 py-4" href="#"
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              class="nav-link link-black position-relative px-3 py-4"
+              href="#"
               ><span class="material-icons"> confirmation_number </span>
               <span
                 class="
@@ -459,7 +463,7 @@
 
       function getDirection() {
         var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+        var direction = window.innerWidth <= 767 ? "vertical" : "horizontal";
 
         return direction;
       }

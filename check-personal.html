@@ -66,175 +66,152 @@
 
     
 <main>
-  <nav
-    class="
-      nav-scroller
-      border
-      border-top-0
-      border-start-0
-      border-end-0
-      border-bottom-1
-      border-dark
-    "
-  >
-    <ul
-      class="
-        nav
-        menu
-        list-unstyled
-        d-flex
-        flex-nowrap
-        justify-content-md-center
-        border border-dark border-1 border-bottom
-      "
-    >
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">音樂</a>
-      </li>
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">戲劇</a>
-      </li>
-
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">設計</a>
-      </li>
-
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">藝術</a>
-      </li>
-
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">美食</a>
-      </li>
-
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">旅遊</a>
-      </li>
-
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">電影 </a>
-      </li>
-
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">親子</a>
-      </li>
-
-      <li class="p-2">
-        <a class="menu__item text-center d-block" href="#">期間限定</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="designBanner bg-primary text-white">
-    <div class="container">
-      <a class="d-block link-white" href="purchase.html">
-        <div class="designBanner__box row flex-nowrap flex-column flex-md-row">
-          <div class="col-md-5 order-md-1">
-            <img
-              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
-              alt="design"
-            />
+  <section class="container timeline">
+    <!-- 時間軸 -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row timeline-section">
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="pt-3">確認訂單</p>
+            </div>
           </div>
-          <div
-            class="
-              designBanner__box__date
-              col-md-1
-              order-md-2
-              pt-4
-              pb-2
-              p-md-0
-              d-md-flex
-              flex-md-column
-              justify-content-md-end
-            "
-          >
-            01 JUN | 31 OCT
+          <div class="col-3">
+            <div class="timeline-pointer timeline-pointer-undo">
+              <p class="pt-3">填寫訂購資訊</p>
+            </div>
           </div>
-          <div class="col-md-4 order-md-0">
-            <!-- <p class="text-white d-md-none">01 JUN | 31 OCT</p> -->
-            <h2 class="h1 text-white fw-bold mb-md-4">2020 台味設計展</h2>
-            <p class="text-white">
-              一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-            </p>
+          <div class="col-3">
+            <div class="timeline-pointer timeline-pointer-undo">
+              <p class="pt-3">填寫付款資訊</p>
+            </div>
           </div>
-        </div></a
-      >
-    </div>
-  </div>
-
-  <div class="designBanner text-primary">
-    <div class="container">
-      <a class="d-block link-primary" href="purchase.html">
-        <div class="designBanner__box row flex-nowrap flex-column flex-md-row">
-          <div class="col-md-5 order-md-1">
-            <img
-              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true"
-              alt="design"
-            />
-          </div>
-          <div
-            class="
-              designBanner__box__date
-              col-md-1
-              order-md-2
-              pt-4
-              pb-2
-              p-md-0
-              d-md-flex
-              flex-md-column
-              justify-content-md-end
-            "
-          >
-            01 JUN | 31 OCT
-          </div>
-          <div class="offset-md-2 col-md-4 order-md-0">
-            <!-- <p class="text-white d-md-none">01 JUN | 31 OCT</p> -->
-            <h2 class="h1 fw-bold mb-md-4">No.22 線上設計展</h2>
-            <p>
-              這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
-            </p>
+          <div class="col-3">
+            <div class="timeline-pointer timeline-pointer-undo">
+              <p class="pt-3">完成訂購</p>
+            </div>
           </div>
         </div>
-      </a>
+      </div>
     </div>
-  </div>
 
-  <div class="designBanner bg-primary text-white">
-    <div class="container">
-      <a class="d-block link-white" href="purchase.html">
-        <div class="designBanner__box row flex-nowrap flex-column flex-md-row">
-          <div class="col-md-5 order-md-1">
+    <div class="row">
+      <div class="col-md-4 order-md-1">
+        <form>
+          <h3 class="h4 fw-bold mb-5">訂購人資訊</h3>
+          <div class="mb-5">
+            <label for="email1" class="form-label fw-bold">Email</label>
+            <input
+              type="email"
+              class="form-control fw-normal"
+              id="email1"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="name" class="form-label fw-bold">姓名</label>
+            <input
+              type="text"
+              class="form-control fw-normal"
+              id="name"
+              placeholder="請輸入姓名"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="phone" class="form-label fw-bold">聯絡電話</label>
+            <input
+              type="tel"
+              class="form-control fw-normal"
+              id="phone"
+              placeholder="請輸入電話"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="coupon" class="form-label fw-bold">優惠碼</label>
+            <input
+              type="text"
+              class="form-control fw-normal"
+              id="coupon"
+              placeholder="請輸入優惠碼"
+              value="TG87526"
+            />
+            <div id="couponHelp" class="form-text text-end text-primary h6">
+              優惠碼已生效
+            </div>
+          </div>
+        </form>
+
+        <div class="d-flex w-100 justify-content-between h5 mb-1">
+          <p class="fw-bold">小計</p>
+          <p>NT$1050</p>
+        </div>
+
+        <div class="d-flex w-100 justify-content-between h5 mb-1">
+          <p class="fw-bold">折扣</p>
+          <p>-NT$50</p>
+        </div>
+
+        <div class="d-flex w-100 justify-content-between h4 fw-bold mb-4">
+          <p>總金額</p>
+          <p>NT$1000</p>
+        </div>
+      </div>
+      <div class="col-md-8 order-md-0">
+        <!-- 購買的展覽票券 -->
+        <div class="row mb-5">
+          <div class="col-md-3 col">
             <img
-              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
-              alt="design"
+              class="img-fluid timeline__img w-100"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+              alt="card"
             />
           </div>
           <div
             class="
-              designBanner__box__date
-              col-md-1
-              order-md-2
-              pt-4
-              pb-2
-              p-md-0
-              d-md-flex
-              flex-md-column
-              justify-content-md-end
+              checkInfoBox
+              col-md-9 col
+              d-flex
+              align-items-md-center
+              position-relative
             "
           >
-            01 JUN | 31 OCT
-          </div>
-          <div class="col-md-4 order-md-0">
-            <!-- <p class="text-white d-md-none">01 JUN | 31 OCT</p> -->
-            <h2 class="h1 text-white fw-bold mb-md-4">高雄設計節</h2>
-            <p class="text-white">
-              設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+            <div class="checkInfoBox__info">
+              <p class="h5 fw-bold mb-1">2020 台味設計展</p>
+              <p class="h5 fw-bold mb-1">01 JUN — 31 OCT</p>
+              <p class="h5 mb-1 checkInfoBox__info__stage">全票</p>
+            </div>
+
+            <p
+              class="
+                h4
+                fw-bold
+                checkInfoBox__info__dollar
+                checkPersonal__info__dollar
+              "
+            >
+              NT$350
             </p>
+
+            <div class="d-md-flex justify-content-center h4 fw-bold">
+              <p class="d-inline-block mx-3 checkInfoBox__info__ticketNum">
+                01
+              </p>
+            </div>
           </div>
-        </div></a
-      >
+        </div>
+      </div>
     </div>
-  </div>
+
+    <!-- 下一步 按鈕 -->
+    <div class="row justify-content-between align-items-end">
+      <div class="col col-md-2">
+        <a class="btn btn-outline-primary d-block" href="#">返回</a>
+      </div>
+      <div class="col col-md-4">
+        <a class="btn btn-secondary d-block" href="#">下一步</a>
+      </div>
+    </div>
+  </section>
 </main>
 
 
