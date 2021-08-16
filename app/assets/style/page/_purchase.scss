@@ -1,0 +1,106 @@
+.ticket {
+  padding: 80px 0px 40px;
+  @include mobile {
+    padding: 44px 0px 40px;
+  }
+}
+.ticket {
+  &__img {
+    height: 256px;
+    object-fit: cover;
+    &__date {
+      width: 1rem;
+    }
+  }
+  &__numberBox {
+    &__info {
+      height: 256px;
+      padding-top: 88px;
+      @include mobile {
+        height: auto;
+        padding-top: 40px;
+      }
+      &-border {
+        border-left: 1px solid $dark;
+        @include mobile {
+          border-left: 0px;
+        }
+      }
+    }
+    &__btnRow {
+      padding-bottom: 68px;
+      @include mobile {
+        padding-top: 40px;
+        padding-bottom: 0px;
+      }
+    }
+  }
+  &__number {
+    font-size: $font-size-lg;
+  }
+  &__info {
+    &__phase {
+      &:hover {
+        border-bottom: 1px solid $secondary;
+      }
+    }
+  }
+}
+
+.exhibition {
+  &__img {
+    height: 400px;
+    object-fit: cover;
+  }
+  &__info {
+    &__img {
+      height: 559px;
+      object-fit: cover;
+    }
+  }
+}
+
+/* 固定在右側 */
+.modal.right .modal-dialog {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transform: translate3d(0%, 0, 0);
+}
+
+/* 更改y軸屬性   overflow-y: auto;  */
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+.modal {
+  &-content {
+    border-radius: 0;
+    border: none;
+  }
+  &-header {
+    border-bottom: none;
+  }
+  &-body {
+    .card {
+      max-width: 540px;
+    }
+  }
+  &-footer {
+    border-top: none;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+  &__closeBtn {
+    width: 20px;
+    height: 20px;
+  }
+  &__amount {
+    margin-bottom: 0px;
+  }
+}

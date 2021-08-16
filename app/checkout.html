@@ -1,0 +1,117 @@
+---
+title: 展覽
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <nav
+    class="
+      nav-scroller
+      border
+      border-top-0
+      border-start-0
+      border-end-0
+      border-bottom-1
+      border-dark
+    "
+  >
+    <ul
+      class="
+        nav
+        menu
+        list-unstyled
+        d-flex
+        flex-nowrap
+        justify-content-md-center
+        border border-dark border-1 border-bottom
+      "
+    >
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">音樂</a>
+      </li>
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">戲劇</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">設計</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">藝術</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">美食</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">旅遊</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">電影 </a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">親子</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">期間限定</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="checkout">
+    <div class="container">
+      <div class="row mt-9 mb-6">
+        <div class="col-md-6 offset-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span
+              class="checkout__icon material-icons d-block text-primary mb-2"
+            >
+              check_circle_outline
+            </span>
+            <p class="text-primary h4">完成訂購</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <p>您的展覽憑證代碼為：</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 offset-md-5">
+          <p class="h3 mt-8 mb-9 text-primary text-center fw-normal">
+            qr147352
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <p>
+            恭喜您已完成「2020 台味設計展」的購票手續，請於 2020/06/01 ~
+            2020/10/31 於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤即可瀏覽。
+          </p>
+        </div>
+      </div>
+      <div class="row my-10">
+        <div class="col-6 col-md-3 offset-md-3">
+          <p>
+            <button type="button" class="w-100 btn btn-outline-primary">
+              繼續瀏覽
+            </button>
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <button type="button" class="w-100 btn btn-secondary">看展去</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -4,6 +4,11 @@
 
 @import "./helpers/mixin";
 @import "./base/base.scss";
+@import "./helpers/util";
 
 @import "./layout/layout.scss";
-@import "./layout/index.scss";
+
+@import "./page/index.scss";
+@import "./page/design.scss";
+@import "./page/purchase.scss";
+@import "./page/check.scss";

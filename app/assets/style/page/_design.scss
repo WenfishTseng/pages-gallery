@@ -1,0 +1,16 @@
+.designBanner {
+  &__box {
+    padding-top: 80px;
+    padding-bottom: 52px;
+    @include mobile {
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+    &__date {
+      width: 1rem;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

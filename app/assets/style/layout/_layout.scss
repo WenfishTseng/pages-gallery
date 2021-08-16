@@ -1,7 +1,32 @@
 .header {
   &__badge {
-    top: 15px;
-    right: 5px;
+    top: 7px;
+    right: 0px;
+  }
+}
+
+.menu {
+  &__item {
+    width: 65px;
+    &:hover {
+      color: $secondary;
+      border-bottom: 1px $secondary solid;
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  &__card {
+    overflow: hidden;
+    &__img {
+      height: 350px;
+      object-fit: cover;
+    }
   }
 }
 

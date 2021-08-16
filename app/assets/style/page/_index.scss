@@ -4,26 +4,13 @@
   height: 480px;
 }
 
-.nav-scroller {
-  height: 2.75rem; /* 隱藏下方捲軸 */
-  overflow-y: hidden;
-  .nav {
-    padding-bottom: 1rem; /* 隱藏下方捲軸 */
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
-
-.menu {
-  &__item {
-    width: 65px;
-  }
-}
-
 .popular {
   &__img {
     height: 100%;
     object-fit: cover;
+    @include mobile {
+      height: auto;
+    }
   }
   &__content {
     &__text {
@@ -32,5 +19,20 @@
   }
   &__date {
     width: 1rem;
+  }
+}
+
+.live {
+  &__box {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true);
+    @include bg-img-cover;
+    height: 482px;
+    @include mobile {
+      height: 464px;
+    }
+    &__card {
+      z-index: 10;
+      overflow: hidden;
+    }
   }
 }

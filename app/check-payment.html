@@ -1,0 +1,230 @@
+---
+title: 展覽
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <section class="container timeline">
+    <!-- 時間軸 -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row timeline-section">
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="pt-3">確認訂單</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="pt-3">填寫訂購資訊</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="pt-3">填寫付款資訊</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="timeline-pointer timeline-pointer-undo">
+              <p class="pt-3">完成訂購</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 order-md-1">
+        <!-- 表單 -->
+        <form class="mb-9">
+          <h3 class="h4 fw-bold mb-5">付款資訊</h3>
+          <div class="mb-5">
+            <label for="cardNum" class="form-label fw-bold">信用卡帳號</label>
+            <input
+              type="number"
+              class="form-control fw-normal"
+              id="cardNum"
+              placeholder="Xxxx-xxxx-xxxx-xxxx"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="cardDate" class="form-label fw-bold">有效日期</label>
+            <input
+              type="text"
+              class="form-control fw-normal"
+              id="cardDate"
+              placeholder="(MM/YY)"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="saveNum" class="form-label fw-bold">安全碼</label>
+            <input
+              type="number"
+              class="form-control fw-normal"
+              id="saveNum"
+              placeholder="***"
+            />
+          </div>
+        </form>
+
+        <!-- 計價 -->
+        <div class="d-flex w-100 justify-content-between h5 mb-1">
+          <p class="fw-bold">小計</p>
+          <p>NT$1050</p>
+        </div>
+
+        <div class="d-flex w-100 justify-content-between h5 mb-1">
+          <p class="fw-bold">折扣</p>
+          <p>-NT$50</p>
+        </div>
+
+        <div class="d-flex w-100 justify-content-between h4 fw-bold mb-4">
+          <p>總金額</p>
+          <p>NT$1000</p>
+        </div>
+      </div>
+      <div class="col-md-8 order-md-0">
+        <!-- 購買的展覽票券 -->
+        <div class="row mb-5">
+          <div class="col-md-3 col">
+            <img
+              class="img-fluid timeline__img w-100"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+              alt="card"
+            />
+          </div>
+          <div
+            class="
+              checkInfoBox
+              col-md-9 col
+              d-flex
+              align-items-md-center
+              position-relative
+            "
+          >
+            <div class="checkInfoBox__info">
+              <p class="h5 fw-bold mb-1">2020 台味設計展</p>
+              <p class="h5 fw-bold mb-1">01 JUN — 31 OCT</p>
+              <p class="h5 mb-1 checkInfoBox__info__stage">全票</p>
+            </div>
+
+            <p
+              class="
+                h4
+                fw-bold
+                checkInfoBox__info__dollar
+                checkPersonal__info__dollar
+              "
+            >
+              NT$350
+            </p>
+
+            <div class="d-md-flex justify-content-center h4 fw-bold">
+              <p class="d-inline-block mx-3 checkInfoBox__info__ticketNum">
+                01
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-3 col">
+            <img
+              class="img-fluid timeline__img w-100"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+              alt="card"
+            />
+          </div>
+          <div
+            class="
+              checkInfoBox
+              col-md-9 col
+              d-flex
+              align-items-md-center
+              position-relative
+            "
+          >
+            <div class="checkInfoBox__info">
+              <p class="h5 fw-bold mb-1">No.22 線上設計展</p>
+              <p class="h5 fw-bold mb-1">01 JUN — 31 OCT</p>
+              <p class="h5 mb-1 checkInfoBox__info__stage">全票</p>
+            </div>
+
+            <p
+              class="
+                h4
+                fw-bold
+                checkInfoBox__info__dollar
+                checkPersonal__info__dollar
+              "
+            >
+              NT$350
+            </p>
+
+            <div class="d-md-flex justify-content-center h4 fw-bold">
+              <p class="d-inline-block mx-3 checkInfoBox__info__ticketNum">
+                01
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-3 col">
+            <img
+              class="img-fluid timeline__img w-100"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
+              alt="card"
+            />
+          </div>
+          <div
+            class="
+              checkInfoBox
+              col-md-9 col
+              d-flex
+              align-items-md-center
+              position-relative
+            "
+          >
+            <div class="checkInfoBox__info">
+              <p class="h5 fw-bold mb-1">高雄設計節</p>
+              <p class="h5 fw-bold mb-1">01 JUN — 31 OCT</p>
+              <p class="h5 mb-1 checkInfoBox__info__stage">全票</p>
+            </div>
+
+            <p
+              class="
+                h4
+                fw-bold
+                checkInfoBox__info__dollar
+                checkPersonal__info__dollar
+              "
+            >
+              NT$350
+            </p>
+
+            <div class="d-md-flex justify-content-center h4 fw-bold">
+              <p class="d-inline-block mx-3 checkInfoBox__info__ticketNum">
+                01
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 下一步 按鈕 -->
+    <div class="row justify-content-between align-items-end">
+      <div class="col col-md-1">
+        <a class="btn btn-outline-primary d-block" href="check-personal.html"
+          >返回</a
+        >
+      </div>
+      <div class="col col-md-4">
+        <a class="btn btn-secondary d-block" href="checkout.html">下一步</a>
+      </div>
+    </div>
+  </section>
+</main>
