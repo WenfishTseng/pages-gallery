@@ -32,7 +32,7 @@
     <header class="container">
       <nav class="position-relative">
         <h1 class="logo position-absolute top-50 start-50 translate-middle">
-          <a class="d-block link-primary" href="/">EXHIBINECTION</a>
+          <a class="d-block link-primary" href="index.html">EXHIBINECTION</a>
         </h1>
         <ul class="nav justify-content-end">
           <li class="nav-item d-none d-md-block">
@@ -177,55 +177,57 @@
 </main>
 
 
-    <section class="swiper container pb-9">
-      <div class="row">
-        <div class="col">
-          <h2 class="title">猜你也喜歡...</h2>
+    <section class="swiper pb-9" data-aos="fade-right">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="title">猜你也喜歡...</h2>
+          </div>
         </div>
-      </div>
-      <!-- Swiper -->
-      <div class="row swiper__card">
-        <div class="offset-md-1">
-          <div class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card border-0">
-                  <img
-                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true"
-                    class="swiper__card__img card-img-top img-fluid"
-                    alt="..."
-                  />
-                  <div class="card-body p-0">
-                    <h3 class="fw-bold h4 py-1">No.22 線上設計展</h3>
-                    <p class="fw-light h4">$350</p>
+        <!-- Swiper -->
+        <div class="row swiper__card">
+          <div class="offset-md-1">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <img
+                      src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true"
+                      class="swiper__card__img card-img-top img-fluid"
+                      alt="..."
+                    />
+                    <div class="card-body p-0">
+                      <h3 class="fw-bold h4 py-1">No.22 線上設計展</h3>
+                      <p class="fw-light h4">$350</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="card border-0">
-                  <img
-                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg?raw=true"
-                    class="swiper__card__img card-img-top img-fluid"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h3 class="fw-bold h4 py-1">No.22 線上設計展</h3>
-                    <p class="fw-light h4">$350</p>
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <img
+                      src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg?raw=true"
+                      class="swiper__card__img card-img-top img-fluid"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h3 class="fw-bold h4 py-1">No.22 線上設計展</h3>
+                      <p class="fw-light h4">$350</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="card border-0">
-                  <img
-                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
-                    class="swiper__card__img card-img-top img-fluid"
-                    alt="..."
-                  />
-                  <div class="card-body p-0">
-                    <h3 class="fw-bold h4 py-1">No.22 線上設計展</h3>
-                    <p class="fw-light h4">$350</p>
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <img
+                      src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
+                      class="swiper__card__img card-img-top img-fluid"
+                      alt="..."
+                    />
+                    <div class="card-body p-0">
+                      <h3 class="fw-bold h4 py-1">No.22 線上設計展</h3>
+                      <p class="fw-light h4">$350</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -290,6 +292,15 @@
         </div>
       </nav>
     </footer>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: "true",
+      });
+    </script>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
