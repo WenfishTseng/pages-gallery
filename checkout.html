@@ -66,239 +66,111 @@
 
     
 <main>
-  <section class="container timeline">
-    <!-- 時間軸 -->
-    <div class="row">
-      <div class="col-md-8">
-        <div class="row timeline-section">
-          <div class="col-3">
-            <div class="timeline-pointer">
-              <p class="pt-3">確認訂單</p>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="timeline-pointer">
-              <p class="pt-3">填寫訂購資訊</p>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="timeline-pointer timeline-pointer-undo">
-              <p class="pt-3">填寫付款資訊</p>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="timeline-pointer timeline-pointer-undo">
-              <p class="pt-3">完成訂購</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <nav
+    class="
+      nav-scroller
+      border
+      border-top-0
+      border-start-0
+      border-end-0
+      border-bottom-1
+      border-dark
+    "
+  >
+    <ul
+      class="
+        nav
+        menu
+        list-unstyled
+        d-flex
+        flex-nowrap
+        justify-content-md-center
+        border border-dark border-1 border-bottom
+      "
+    >
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">音樂</a>
+      </li>
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">戲劇</a>
+      </li>
 
-    <div class="row">
-      <div class="col-md-4 order-md-1">
-        <!-- 表單 -->
-        <form class="mb-9">
-          <h3 class="h4 fw-bold mb-5">訂購人資訊</h3>
-          <div class="mb-5">
-            <label for="email1" class="form-label fw-bold">Email</label>
-            <input
-              type="email"
-              class="form-control fw-normal"
-              id="email1"
-              placeholder="example@gmail.com"
-            />
-          </div>
-          <div class="mb-5">
-            <label for="name" class="form-label fw-bold">姓名</label>
-            <input
-              type="text"
-              class="form-control fw-normal"
-              id="name"
-              placeholder="請輸入姓名"
-            />
-          </div>
-          <div class="mb-5">
-            <label for="phone" class="form-label fw-bold">聯絡電話</label>
-            <input
-              type="tel"
-              class="form-control fw-normal"
-              id="phone"
-              placeholder="請輸入電話"
-            />
-          </div>
-          <div class="mb-5">
-            <label for="coupon" class="form-label fw-bold">優惠碼</label>
-            <input
-              type="text"
-              class="form-control fw-normal"
-              id="coupon"
-              placeholder="請輸入優惠碼"
-              value="TG87526"
-            />
-            <div id="couponHelp" class="form-text text-end text-primary h6">
-              優惠碼已生效
-            </div>
-          </div>
-        </form>
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">設計</a>
+      </li>
 
-        <!-- 計價 -->
-        <div class="d-flex w-100 justify-content-between h5 mb-1">
-          <p class="fw-bold">小計</p>
-          <p>NT$1050</p>
-        </div>
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">藝術</a>
+      </li>
 
-        <div class="d-flex w-100 justify-content-between h5 mb-1">
-          <p class="fw-bold">折扣</p>
-          <p>-NT$50</p>
-        </div>
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">美食</a>
+      </li>
 
-        <div class="d-flex w-100 justify-content-between h4 fw-bold mb-4">
-          <p>總金額</p>
-          <p>NT$1000</p>
-        </div>
-      </div>
-      <div class="col-md-8 order-md-0">
-        <!-- 購買的展覽票券 -->
-        <div class="row mb-5">
-          <div class="col-md-3 col">
-            <img
-              class="img-fluid timeline__img w-100"
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
-              alt="card"
-            />
-          </div>
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">旅遊</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">電影 </a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">親子</a>
+      </li>
+
+      <li class="p-2">
+        <a class="menu__item text-center d-block" href="#">期間限定</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="checkout">
+    <div class="container">
+      <div class="row mt-9 mb-6">
+        <div class="col-md-6 offset-md-3">
           <div
-            class="
-              checkInfoBox
-              col-md-9 col
-              d-flex
-              align-items-md-center
-              position-relative
-            "
+            class="d-flex flex-column justify-content-center align-items-center"
           >
-            <div class="checkInfoBox__info">
-              <p class="h5 fw-bold mb-1">2020 台味設計展</p>
-              <p class="h5 fw-bold mb-1">01 JUN — 31 OCT</p>
-              <p class="h5 mb-1 checkInfoBox__info__stage">全票</p>
-            </div>
-
-            <p
-              class="
-                h4
-                fw-bold
-                checkInfoBox__info__dollar
-                checkPersonal__info__dollar
-              "
+            <span
+              class="checkout__icon material-icons d-block text-primary mb-2"
             >
-              NT$350
-            </p>
-
-            <div class="d-md-flex justify-content-center h4 fw-bold">
-              <p class="d-inline-block mx-3 checkInfoBox__info__ticketNum">
-                01
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-md-3 col">
-            <img
-              class="img-fluid timeline__img w-100"
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
-              alt="card"
-            />
-          </div>
-          <div
-            class="
-              checkInfoBox
-              col-md-9 col
-              d-flex
-              align-items-md-center
-              position-relative
-            "
-          >
-            <div class="checkInfoBox__info">
-              <p class="h5 fw-bold mb-1">No.22 線上設計展</p>
-              <p class="h5 fw-bold mb-1">01 JUN — 31 OCT</p>
-              <p class="h5 mb-1 checkInfoBox__info__stage">全票</p>
-            </div>
-
-            <p
-              class="
-                h4
-                fw-bold
-                checkInfoBox__info__dollar
-                checkPersonal__info__dollar
-              "
-            >
-              NT$350
-            </p>
-
-            <div class="d-md-flex justify-content-center h4 fw-bold">
-              <p class="d-inline-block mx-3 checkInfoBox__info__ticketNum">
-                01
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-md-3 col">
-            <img
-              class="img-fluid timeline__img w-100"
-              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
-              alt="card"
-            />
-          </div>
-          <div
-            class="
-              checkInfoBox
-              col-md-9 col
-              d-flex
-              align-items-md-center
-              position-relative
-            "
-          >
-            <div class="checkInfoBox__info">
-              <p class="h5 fw-bold mb-1">高雄設計節</p>
-              <p class="h5 fw-bold mb-1">01 JUN — 31 OCT</p>
-              <p class="h5 mb-1 checkInfoBox__info__stage">全票</p>
-            </div>
-
-            <p
-              class="
-                h4
-                fw-bold
-                checkInfoBox__info__dollar
-                checkPersonal__info__dollar
-              "
-            >
-              NT$350
-            </p>
-
-            <div class="d-md-flex justify-content-center h4 fw-bold">
-              <p class="d-inline-block mx-3 checkInfoBox__info__ticketNum">
-                01
-              </p>
-            </div>
+              check_circle_outline
+            </span>
+            <p class="text-primary h4">完成訂購</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- 下一步 按鈕 -->
-    <div class="row justify-content-between align-items-end">
-      <div class="col col-md-2">
-        <a class="btn btn-outline-primary d-block" href="check-order.html"
-          >返回</a
-        >
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <p>您的展覽憑證代碼為：</p>
+        </div>
       </div>
-      <div class="col col-md-4">
-        <a class="btn btn-secondary d-block" href="check-payment.html"
-          >下一步</a
-        >
+      <div class="row">
+        <div class="col-md-2 offset-md-5">
+          <p class="h3 mt-8 mb-9 text-primary text-center fw-normal">
+            qr147352
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <p>
+            恭喜您已完成「2020 台味設計展」的購票手續，請於 2020/06/01 ~
+            2020/10/31 於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤即可瀏覽。
+          </p>
+        </div>
+      </div>
+      <div class="row my-10">
+        <div class="col-6 col-md-3 offset-md-3">
+          <p>
+            <button type="button" class="w-100 btn btn-outline-primary">
+              繼續瀏覽
+            </button>
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <button type="button" class="w-100 btn btn-secondary">看展去</button>
+        </div>
       </div>
     </div>
   </section>

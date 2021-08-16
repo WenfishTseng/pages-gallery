@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="timeline-pointer timeline-pointer-undo">
+            <div class="timeline-pointer">
               <p class="pt-3">填寫付款資訊</p>
             </div>
           </div>
@@ -99,46 +99,33 @@
       <div class="col-md-4 order-md-1">
         <!-- 表單 -->
         <form class="mb-9">
-          <h3 class="h4 fw-bold mb-5">訂購人資訊</h3>
+          <h3 class="h4 fw-bold mb-5">付款資訊</h3>
           <div class="mb-5">
-            <label for="email1" class="form-label fw-bold">Email</label>
+            <label for="cardNum" class="form-label fw-bold">信用卡帳號</label>
             <input
-              type="email"
+              type="number"
               class="form-control fw-normal"
-              id="email1"
-              placeholder="example@gmail.com"
+              id="cardNum"
+              placeholder="Xxxx-xxxx-xxxx-xxxx"
             />
           </div>
           <div class="mb-5">
-            <label for="name" class="form-label fw-bold">姓名</label>
+            <label for="cardDate" class="form-label fw-bold">有效日期</label>
             <input
               type="text"
               class="form-control fw-normal"
-              id="name"
-              placeholder="請輸入姓名"
+              id="cardDate"
+              placeholder="(MM/YY)"
             />
           </div>
           <div class="mb-5">
-            <label for="phone" class="form-label fw-bold">聯絡電話</label>
+            <label for="saveNum" class="form-label fw-bold">安全碼</label>
             <input
-              type="tel"
+              type="number"
               class="form-control fw-normal"
-              id="phone"
-              placeholder="請輸入電話"
+              id="saveNum"
+              placeholder="***"
             />
-          </div>
-          <div class="mb-5">
-            <label for="coupon" class="form-label fw-bold">優惠碼</label>
-            <input
-              type="text"
-              class="form-control fw-normal"
-              id="coupon"
-              placeholder="請輸入優惠碼"
-              value="TG87526"
-            />
-            <div id="couponHelp" class="form-text text-end text-primary h6">
-              優惠碼已生效
-            </div>
           </div>
         </form>
 
@@ -290,15 +277,13 @@
 
     <!-- 下一步 按鈕 -->
     <div class="row justify-content-between align-items-end">
-      <div class="col col-md-2">
-        <a class="btn btn-outline-primary d-block" href="check-order.html"
+      <div class="col col-md-1">
+        <a class="btn btn-outline-primary d-block" href="check-personal.html"
           >返回</a
         >
       </div>
       <div class="col col-md-4">
-        <a class="btn btn-secondary d-block" href="check-payment.html"
-          >下一步</a
-        >
+        <a class="btn btn-secondary d-block" href="checkout.html">下一步</a>
       </div>
     </div>
   </section>
